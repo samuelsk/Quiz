@@ -14,6 +14,7 @@
 		7ED68B841A9BA4C600073F73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ED68B831A9BA4C600073F73 /* Images.xcassets */; };
 		7ED68B871A9BA4C600073F73 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7ED68B851A9BA4C600073F73 /* LaunchScreen.xib */; };
 		7ED68B931A9BA4C600073F73 /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED68B921A9BA4C600073F73 /* QuizTests.m */; };
+		7ED68B9E1A9BA75900073F73 /* Quiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED68B9D1A9BA75900073F73 /* Quiz.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		7ED68B8C1A9BA4C600073F73 /* QuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED68B911A9BA4C600073F73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ED68B921A9BA4C600073F73 /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		7ED68B9C1A9BA75900073F73 /* Quiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quiz.h; sourceTree = "<group>"; };
+		7ED68B9D1A9BA75900073F73 /* Quiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Quiz.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				7ED68B831A9BA4C600073F73 /* Images.xcassets */,
 				7ED68B851A9BA4C600073F73 /* LaunchScreen.xib */,
 				7ED68B761A9BA4C600073F73 /* Supporting Files */,
+				7ED68B9C1A9BA75900073F73 /* Quiz.h */,
+				7ED68B9D1A9BA75900073F73 /* Quiz.m */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			files = (
 				7ED68B7F1A9BA4C600073F73 /* ViewController.m in Sources */,
 				7ED68B7C1A9BA4C600073F73 /* AppDelegate.m in Sources */,
+				7ED68B9E1A9BA75900073F73 /* Quiz.m in Sources */,
 				7ED68B791A9BA4C600073F73 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Quiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

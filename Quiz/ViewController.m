@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    quiz = [[Quiz alloc] init];
+    cont = -1;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +25,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)mostraPergunta:(id)sender {
+    if (cont == [quiz.perguntas count]-1)
+        cont = -1;
+    cont++;
+    pergunta.text = (@"%@", quiz.perguntas[cont]);
+    switch (cont) {
+        case 0: imagem.image = [UIImage imageNamed:@"2.png"];
+            break;
+        case 1: imagem.image = [UIImage imageNamed:@"4.png"];
+            break;
+        case 2: imagem.image = [UIImage imageNamed:@"6.png"];
+            break;
+        default: break;
+    }
+}
+
+- (IBAction)mostraResposta:(id)sender {
+    if (cont == -1) {
+        resposta.text = @"Nenhuma pergunta foi feita.";
+        return;
+    }
+    resposta.text = (@"%@", quiz.respostas[cont]);
+}
 @end

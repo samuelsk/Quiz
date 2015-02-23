@@ -26,6 +26,7 @@
 }
 
 - (IBAction)mostraPergunta:(id)sender {
+    resposta.text = @"???";
     if (cont == [quiz.perguntas count]-1)
         cont = -1;
     cont++;
